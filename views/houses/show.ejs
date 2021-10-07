@@ -70,7 +70,7 @@
 
   <% house.reviews.forEach(function(review) { %>
     <div class="review">
- <% if (review.userId.equals(user._id)) { %>
+ <% if (user && review.userId.equals(user._id)) { %>
   <form action="/reviews/<%= review._id %>?_method=DELETE" method="POST">
     <button type="submit">X</button>
   </form>

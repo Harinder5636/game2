@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title>Houses</title>
+</head>
+<body>
+  <h1>Houses For Sale List</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Address</th>
+        <th>Bedrooms</th>
+        <th>Bathrooms</th>
+        <th>Squarefeet</th>
+      </tr>
+    </thead>
+    <tbody>
+    <a href='/houses/new'>Add Houses </a>
+    <a href="/logout">Logout</a>
+    <% houses.forEach(function(m) { %>
+        <tr>
+          <td><%= m.address %></td>
+          <td><%= m.bedrooms %></td>
+          <td><%= m.bathrooms %></td>
+          <td><%= m.squarefeet%></td>
+
+   
+          <td><a href="/houses/<%= m._id %>">Review</a></td>
+        </tr>
+        <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>

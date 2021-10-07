@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>House</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href='/houses/new'>Add Houses</a>
+    <a href='/houses'>All Houses</a>
+    <a href="/logout">Logout</a>
+    <h1>House Review</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>Address</th>
+            <th>Bedrooms</th>
+            <th>Bathrooms</th>
+            <th>Squarefeet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= house.address %></td>
+            <td><%= house.bedrooms %></td>
+            <td><%= house.bathrooms %></td>
+            <td><%= house.squarefeet %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br><br><h2>Reviews</h2>
+<form id="add-review-form" method="POST"
+  action="/houses/<%= house._id %>/reviews">
+  <label>Review:</label>
+  <textarea name="description"></textarea>
+  <label>Rating:</label>
+  <select name="rating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <input type="submit" value="Add Review">
+</form>
+
+<% if (house.reviews.length) { %>
+    <table>
+      <thead>
+        <tr>
+            
+          <th>Review</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% house.reviews.forEach(function(r) { %>
+          <tr>
+        
+            <td><%= r.description %></td>
+            <td><%= r.rating %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  <% } else { %>
+    <h5>No Reviews Yet</h5>
+  <% } %>
+
+  <% house.reviews.forEach(function(review) { %>
+    <div class="review">
+ <% if (review.userId.equals(user._id)) { %>
+  <form action="/reviews/<%= review._id %>?_method=DELETE" method="POST">
+    <button type="submit">X</button>
+  </form>
+  <% } %>
+</div>
+<% }) %>
+  
+
+<% house.reviews.forEach(function(review){ %> 
+    <div>
+     <form action="/reviews/<%= review._id %>?_method=PUT" method="POST">
+      <input type="text" 
+        name="description" 
+        value="<%= %>"
+      >
+      <select name="rating" 
+        value='<%= review.rating %>'
+        >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5" selected>5</option>
+      </select>
+        <button type='submit'>Update Comment</button>
+      </form>
+    </div>
+  <% }) %>    
+    </body>
+    </html>
+
+
+
+
+   

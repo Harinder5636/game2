@@ -7,4 +7,4 @@ const customerSchema = new mongoose.Schema({
     googleId: String
 });
 // need to have a googleId on my userSchema
-module.exports = mongoose.model('customer', customerSchema);
+module.exports = mongoose.model('Customer', customerSchema);

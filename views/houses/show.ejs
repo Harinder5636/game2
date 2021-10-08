@@ -5,12 +5,12 @@
     <title>House</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <a href='/houses/new'>Add Houses</a>
-    <a href='/houses'>All Houses</a>
-    <a href="/logout">Logout</a>
-    <h1>House Review</h1>
-    <table>
+  <body id="showbody">
+    <a id="addds" href='/houses/new'>Add Houses</a>
+    <a id="alll" href='/houses'>All Houses</a>
+    <a id="outtt" href="/logout">Logout</a>
+    <h1 id="titletwo">House Review</h1>
+    <table id="tablesec">
         <thead>
           <tr>
             <th>Address</th>
@@ -29,7 +29,7 @@
         </tbody>
       </table>
 
-      <br><br><h2>Reviews</h2>
+      <br><br><h2 id="reviewtwo">Add Reviews</h2>
 <form id="add-review-form" method="POST"
   action="/houses/<%= house._id %>/reviews">
   <label>Review:</label>
@@ -42,9 +42,9 @@
     <option value="4">4</option>
     <option value="5">5</option>
   </select>
-  <input type="submit" value="Add Review">
+  <input id="lastreview" type="submit" value="Add Review">
 </form>
-
+<container>
 <% if (house.reviews.length) { %>
     <table>
       <thead>
@@ -72,7 +72,7 @@
     <div class="review">
  <% if (user && review.userId.equals(user._id)) { %>
   <form action="/reviews/<%= review._id %>?_method=DELETE" method="POST">
-    <button type="submit">X</button>
+    <button id="cross" type="submit">X</button>
   </form>
   <% } %>
 </div>
@@ -95,10 +95,11 @@
         <option value="4">4</option>
         <option value="5" selected>5</option>
       </select>
-        <button type='submit'>Update Comment</button>
+        <button id="lastone" type='submit'>Update Comment</button>
       </form>
     </div>
   <% }) %>    
+</container>
     </body>
     </html>
 

@@ -5,12 +5,14 @@ This application is created to list your houses for sale. Its currenlty in its e
 
 ## Screenshot(s)
 
-- <img src="https://i.ibb.co/kg5C7FS/Screen-Shot-2021-09-16-at-5-42-45-PM.png" ></a>
+- <img src="https://i.imgur.com/GokAb8F.jpg" ></a>
+- <img src="https://i.imgur.com/fAzCfHX.png" ></a>
 
 
 
 #### Technolgies
 
+HTML, CSS, JavaScript, Node.js, Express, Mongo DB, and Mongoose.
 
 #### Getting Started
 

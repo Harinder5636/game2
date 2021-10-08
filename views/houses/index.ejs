@@ -6,30 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <title>Houses</title>
+  <a id="addhouse" href='/houses/new'>Add House</a>
+  <a id="outtwo" href="/logout">Logout</a>
 </head>
-<body>
-  <h1>Houses For Sale List</h1>
-  <table>
-    <thead>
+<body id="indexbody">
+  <h1 id="working">House List</h1>
+  <table id="tables">
+    <thead id="toplist">
       <tr>
-        <th>Address</th>
-        <th>Bedrooms</th>
-        <th>Bathrooms</th>
-        <th>Squarefeet</th>
+        <container id="fewlist">
+        <th id="topa">Address</th>
+        <th id="topb">Bedrooms</th>
+        <th id="topc">Bathrooms</th>
+        <th id="topd">Squarefeet</th>
+      </container>
       </tr>
     </thead>
-    <tbody>
-    <a href='/houses/new'>Add Houses </a>
-    <a href="/logout">Logout</a>
+
+    <tbody id="donelist">
+ 
     <% houses.forEach(function(m) { %>
         <tr>
-          <td><%= m.address %></td>
-          <td><%= m.bedrooms %></td>
-          <td><%= m.bathrooms %></td>
-          <td><%= m.squarefeet%></td>
+          <td id="lista"><%= m.address %></td>
+          <td id="listb"><%= m.bedrooms %></td>
+          <td id="listc"><%= m.bathrooms %></td>
+          <td id="listd"><%= m.squarefeet%></td>
 
    
-          <td><a href="/houses/<%= m._id %>">Review</a></td>
+          <td id="review"><a id="revieww" href="/houses/<%= m._id %>">Review</a></td>
         </tr>
         <% }) %>
     </tbody>

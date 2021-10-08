@@ -6,11 +6,305 @@
   font-family: sans-serif;
 }
 
-header {
+#bodyy{
+  margin-top: 300px;
+ font-size: 40px;
+ margin-bottom: 400px;
+ background-image: url('https://i.imgur.com/hKrlfcb.jpg');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
+
+#titlefirst{
+  border: 2vmin solid rgb(22, 2, 2);
+  border-radius: 25px;
+  background-color: rgb(186, 203, 228);
+  width: 100%;
+}
+
+#loginfirst{
+  border: 2vmin solid rgb(22, 2, 2);
+  border-radius: 25px;
+  background-color: rgb(186, 203, 228);
+  width: 100%;
+}
+
+#loginfirst:hover{
+  background-color: black;
+  color: rgb(29, 39, 167);
+}
+
+#newadd{
+  margin: 100px auto 40px auto;
+  color: #040414;
+  margin: 150px auto 40px auto;
+  font-size: 70px;
+}
+
+#allList{
   text-align: center;
-  padding: 20px;
-  background-color: white;
-  text-decoration: none;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#back{
+  border: 2vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 25px;
+  font-size: 4vmin;
+  height: 71px;
+  width: 88px;
+  background-color: rgb(48, 118, 223);
+  color: black;
+}
+
+#back:hover{
+  background-color: black;
+    color: rgb(29, 39, 167);
+}
+
+#out{
+  border: 2vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 25px;
+  font-size: 4vmin;
+  height: 71px;
+  width: 140px;
+  background-color: rgb(48, 118, 223);
+  color: black;
+  margin-left: 1000px;
+}
+
+#newbutton{
+  border: 2vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 25px;
+  font-size: 4vmin;
+  height: 71px;
+  width: 300px;
+  background-color: rgb(48, 118, 223);
+  color: black;
+  margin-bottom: 200px;
+}
+
+#newbutton:hover{
+  background-color: black;
+  color: rgb(29, 39, 167);
+}
+
+#addhouse{
+  border: 2vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 25px;
+  font-size: 4vmin;
+  height: 71px;
+  width: 300px;
+  background-color: rgb(48, 118, 223);
+  color: black;
+  margin-left: -10px;
+}
+
+#addhouse:hover{
+  background-color: black;
+    color: rgb(29, 39, 167);
+}
+
+#outtwo {
+  border: 2vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 25px;
+  font-size: 4vmin;
+  height: 71px;
+  width: 140px;
+  background-color: rgb(48, 118, 223);
+  color: black;
+  margin-left: 1000px;
+  margin-top: -300px
+}
+
+#outtwo:hover{
+  background-color: black;
+    color: rgb(29, 39, 167);
+}
+
+#working{
+  margin: 100px auto 40px auto;
+  color: #040414;
+  font-size: 70px;
+}
+
+#tables{
+ 
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin-left: 300px;
+}
+
+#toplist{
+  font-size: 40px;
+}
+
+#addds{
+  border: 2vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 25px;
+  font-size: 4vmin;
+  height: 71px;
+  width: 250px;
+  background-color: rgb(48, 118, 223);
+  color: black;
+margin-left: -20px;
+}
+
+#addds:hover{
+  background-color: black;
+  color: rgb(29, 39, 167);
+}
+
+#alll{
+  border: 2vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 25px;
+  font-size: 4vmin;
+  height: 71px;
+  width: 225px;
+  background-color: rgb(48, 118, 223);
+  color: black;
+  margin-left: 350PX;
+}
+
+#alll:hover{
+  background-color: black;
+  color: rgb(29, 39, 167);
 }
 
 
+#outtt{
+  border: 2vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 25px;
+  font-size: 4vmin;
+  height: 71px;
+  width: 140px;
+  background-color: rgb(48, 118, 223);
+  color: black;
+  margin-left: 450px;
+  
+}
+
+#outtt:hover{
+  background-color: black;
+  color: rgb(29, 39, 167);
+}
+
+#titletwo{
+  font-size: 100px;
+  margin-top: 100px;
+}
+
+#tablesec{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin-left: 500px;
+}
+
+#reviewtwo{
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+#revieww{
+  border: 2vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+  background-color: rgb(48, 118, 223);
+  color: black;
+
+}
+
+#revieww:hover{
+  background-color: black;
+  color: rgb(29, 39, 167);
+}
+
+#add-review-form{
+  font-size: 20px;
+}
+
+
+#lastreview{
+  border: 1vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 5px;
+  font-size: 10px;
+  height: 30px;
+  width: 200x;
+  background-color: rgb(48, 118, 223);
+  color: black;
+}
+
+#lastreview:hover{
+  background-color: black;
+  color: rgb(29, 39, 167);
+}
+
+
+#cross{
+  border: 1vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 5px;
+  font-size: 10px;
+  height: 30px;
+  width: 200x;
+  background-color: rgb(48, 118, 223);
+  color: black;
+}
+
+#cross:hover{
+  background-color: black;
+  color: rgb(29, 39, 167);
+}
+
+#lastone{
+  border: 1vmin solid rgb(22, 2, 2);
+  display: inline-grid;
+  border-radius: 5px;
+  font-size: 10px;
+  height: 30px;
+ 
+  background-color: rgb(48, 118, 223);
+  color: black;
+}
+
+#lastone:hover{
+  background-color: black;
+  color: rgb(29, 39, 167);
+}
+
+#newbody{
+  background-image: url('https://i.imgur.com/KinrnYe.jpg');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
+
+#indexbody{
+  background-image: url('https://i.imgur.com/KinrnYe.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#showbody{
+  background-image: url('https://i.imgur.com/KinrnYe.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 200px;
+}
